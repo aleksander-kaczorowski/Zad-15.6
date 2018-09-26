@@ -1,0 +1,50 @@
+* {
+  font-family: Calibri;
+}
+
+.board {
+  text-align: center;
+}
+
+.column-container {
+  display: -ms-flexbox;
+  display: flex;
+  wrap: no-wrap;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: stretch;
+      align-items: stretch;
+  align-contnet: stretch;
+  -ms-flex-pack: center;
+      justify-content: center;
+  padding: 20px 10%;
+}
+
+.column {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+button {
+  border: none;
+}
+
+.card {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin: 5px auto;
+  padding: auto;
+  list-style: none;
+  text-align: left;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  font-size: 20px;
+  height: 50px;
+}
+
+.card p {
+  margin: auto 10px;
+}
+/*# sourceMappingURL=style.css.map */
