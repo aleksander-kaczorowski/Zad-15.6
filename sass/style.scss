@@ -1,11 +1,31 @@
 * {
-	font-family: Calibri;
-	//text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: #FFF;
+	
 }
+$border: 2px solid #FFF;
+
+
+html {
+  background: url('https://images.pexels.com/photos/875515/pexels-photo-875515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+h1 {
+	font-size: 2.5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
 .board {
 	text-align: center;
-
+	margin: 10vh;
 }
+
 .column-container {
 	display: flex;
 	wrap: no-wrap;
@@ -14,26 +34,58 @@
 	align-contnet: stretch;
 	justify-content: center;
 	padding: 20px 10%;
+
 }
+
 .column {
-//	display: flex;
 	flex: 1;
+	border-right: $border;
+	border-left: $border;
+	margin: 20px 1px;
 }
+
 button {
-	border: none;
+	border: $border;
+	padding: 10px;
+	background-color: rgba(0,0,0,0);
+	font-size: 18px;
+	margin: 0 2px;
+	outline: none;
+	&:hover {
+		color: black;
+		background: #FFF;
+		border-color: #FFF;
+		transition: all 0.4s ease 0s;
+		}
 }
+
+li {
+	list-style: none;
+}
+
+.column-card-list {
+	min-height: 40vh;
+}
+
 .card {
 	display: flex;
 	flex-direction: row;
 	margin: 5px auto;
 	padding: auto;
-	list-style: none;
 	text-align: left;
-	border-bottom: 1px solid;
-	border-left: 1px solid;
 	font-size: 20px;
 	height: 50px;
 	p {
-		margin: auto 10px;
+		margin: 0 10px;
+		font-size: 18px;
+		line-height: 46px;
+		border-bottom: 2px solid rgba(0,0,0,0);
 	}
+	&:hover {
+		p {
+			border-bottom: $border;
+			transition: .4s ease;
+		}
+	}
+
 }
